@@ -31,7 +31,7 @@
 <div class="bg-white rounded-lg shadow-md p-8">
 <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center">プライバシーポリシー</h1>
 <div class="text-sm text-gray-600 mb-8 text-center">
-最終更新日：2024年1月1日
+最終更新日：2025年6月1日
 </div>
 
 <div class="prose prose-lg max-w-none">
