@@ -1,0 +1,14 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e1f5fe 100%);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+} 
