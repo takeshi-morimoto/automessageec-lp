@@ -194,8 +194,8 @@
 <p class="text-gray-700 mb-4">本規約に関するお問い合わせは、以下までご連絡ください：</p>
 <div class="bg-gray-50 p-4 rounded-lg">
 <p class="text-gray-700 font-medium">AutoMessageEC運営事務局</p>
-<p class="text-gray-700">メール：info@automessageec.com</p>
-<p class="text-gray-700">受付時間：平日9:00-18:00</p>
+<p class="text-gray-700">メール：info@koikoi.co.jp</p>
+<p class="text-gray-700">営業時間：火～土：11:00-19:00 / 日・祝：11:00-16:00</p>
 </div>
 </section>
 
