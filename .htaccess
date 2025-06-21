@@ -1,0 +1,68 @@
+# セキュリティヘッダー
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ファイルアクセス制限
+<Files "contact_log.txt">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "test_contact.txt">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# 不要なファイルのアクセス禁止
+<FilesMatch "\.(log|txt)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# キャッシュ設定
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+</IfModule>
+
+# Gzip圧縮
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# URL書き換え（必要に応じて）
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # HTTPSリダイレクト（本番環境でHTTPS使用時）
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # www付きドメインへのリダイレクト（必要に応じて）
+    # RewriteCond %{HTTP_HOST} ^example\.com [NC]
+    # RewriteRule ^(.*)$ https://www.example.com/$1 [L,R=301]
+</IfModule>
+
+# PHPエラー表示設定（本番環境では非表示）
+php_flag display_errors Off
+php_flag log_errors On
+php_value error_log error.log 

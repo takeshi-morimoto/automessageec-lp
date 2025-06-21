@@ -91,9 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (isValid) {
                 // フォームをサーバーに送信
-                form.method = 'POST';
-                form.action = 'contact-handler.php';
-                form.submit();
+                this.submit();
             } else {
                 alert(errorMessage);
             }
