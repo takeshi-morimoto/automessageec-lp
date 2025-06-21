@@ -54,9 +54,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email_body .= "プライバシーポリシー同意: " . $privacy . "\n";
         
         // メール送信設定（実際の送信先メールアドレスに変更してください）
-        $to = 'info@automessageec.com';
+        $to = 'info@koikoi.co.jp';
         $subject = 'AutoMessageEC お問い合わせ - ' . $name . '様';
-        $headers = 'From: noreply@automessageec.com' . "\r\n" .
+        $headers = 'From: noreply@koikoi.co.jp' . "\r\n" .
                    'Reply-To: ' . $email . "\r\n" .
                    'X-Mailer: PHP/' . phpversion();
         
