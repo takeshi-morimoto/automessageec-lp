@@ -531,7 +531,7 @@
 <input id="privacy" name="privacy" type="checkbox" required class="w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary">
 </div>
 <div class="ml-3 text-sm">
-<label for="privacy" class="text-lg font-medium text-gray-700">プライバシーポリシーに同意する <span class="text-red-500">*</span></label>
+<label for="privacy" class="text-lg font-medium text-gray-700"><a href="privacy-policy.php" target="_blank" class="text-primary hover:underline">プライバシーポリシー</a>に同意する <span class="text-red-500">*</span></label>
 </div>
 </div>
 <div class="text-center">
@@ -618,8 +618,8 @@
 </div>
 </div>
 <div class="mt-4 text-center">
-<a href="#" class="text-gray-400 text-sm hover:text-white transition-colors mr-4">プライバシーポリシー</a>
-<a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">利用規約</a>
+<a href="privacy-policy.php" class="text-gray-400 text-sm hover:text-white transition-colors mr-4">プライバシーポリシー</a>
+<a href="terms-of-service.php" class="text-gray-400 text-sm hover:text-white transition-colors">利用規約</a>
 </div>
 </div>
 </footer>
