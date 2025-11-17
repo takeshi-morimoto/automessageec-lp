@@ -1,0 +1,25 @@
+# Claude Code設定ファイル
+.claude/
+
+# ログファイル
+*.log
+contact_log.txt
+test_contact.txt
+error.log
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# エディタ設定
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 一時ファイル
+tmp/
+temp/
+nul
