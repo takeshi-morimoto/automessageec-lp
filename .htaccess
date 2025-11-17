@@ -5,6 +5,9 @@
     Header always set X-XSS-Protection "1; mode=block"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # Content Security Policy - CDN許可設定
+    Header always set Content-Security-Policy "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com https://fonts.googleapis.com *.google.com *.googleapis.com *.gstatic.com *.googletagmanager.com *.google-analytics.com *.doubleclick.net *.wp.com stats.wp.com s0.wp.com https://pagead2.googlesyndication.com https://challenges.cloudflare.com https://ep2.adtrafficquality.google; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; default-src 'self'"
 </IfModule>
 
 # ファイルアクセス制限
