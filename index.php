@@ -4,13 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AutoMessageEC - ECショップの注文処理自動化ツール</title>
+<!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<!-- RemixIcon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-WJ8NhFQJmBiF8APfxkDbJ9A11xBHxRfZnB2PxTe7x1A8v6F0H5pP1E/v9qnxNqV3h6f9Z4k6MlGPGXKvFf6ow==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="./assets/css/style.css">
+<!-- Tailwind Config -->
 <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#64748b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 </head>
 <body class="bg-white">
@@ -69,7 +74,7 @@
 </div>
 <!-- PC画面部分 -->
 <div class="bg-white rounded-b-md overflow-hidden w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px]">
-<img src="assets/images/hero-bg.png" alt="AutoMessageEC画面" class="w-full h-full object-cover">
+<img src="./assets/images/hero-bg.png" alt="AutoMessageEC画面" class="w-full h-full object-cover">
 </div>
 </div>
 <!-- PC台座 -->
@@ -137,7 +142,7 @@
 <div id="tab1" class="tab-content active">
 <div class="flex flex-col md:flex-row items-center gap-12">
 <div class="md:w-1/2">
-<img src="assets/images/mail-concept.png" alt="メール受信設定コンセプト" class="rounded-lg shadow-lg w-full">
+<img src="./assets/images/mail-concept.png" alt="メール受信設定コンセプト" class="rounded-lg shadow-lg w-full">
 </div>
 <div class="md:w-1/2">
 <h3 class="text-3xl font-semibold text-gray-900 mb-6">多様なメールサーバー・IMAP対応</h3>
@@ -175,7 +180,7 @@
 <div id="tab2" class="tab-content hidden">
 <div class="flex flex-col md:flex-row items-center gap-12">
 <div class="md:w-1/2">
-<img src="assets/images/data-concept.png" alt="注文情報抽出コンセプト" class="rounded-lg shadow-lg w-full">
+<img src="./assets/images/data-concept.png" alt="注文情報抽出コンセプト" class="rounded-lg shadow-lg w-full">
 </div>
 <div class="md:w-1/2">
 <h3 class="text-3xl font-semibold text-gray-900 mb-6">商品名・注文ID・氏名等の抽出</h3>
@@ -213,7 +218,7 @@
 <div id="tab3" class="tab-content hidden">
 <div class="flex flex-col md:flex-row items-center gap-12">
 <div class="md:w-1/2">
-<img src="assets/images/auth-concept.png" alt="自動ログインコンセプト" class="rounded-lg shadow-lg w-full">
+<img src="./assets/images/auth-concept.png" alt="自動ログインコンセプト" class="rounded-lg shadow-lg w-full">
 </div>
 <div class="md:w-1/2">
 <h3 class="text-3xl font-semibold text-gray-900 mb-6">Seleniumによる自動ログイン</h3>
@@ -251,7 +256,7 @@
 <div id="tab4" class="tab-content hidden">
 <div class="flex flex-col md:flex-row items-center gap-12">
 <div class="md:w-1/2">
-<img src="assets/images/message-concept.png" alt="メッセージ送信コンセプト" class="rounded-lg shadow-lg w-full">
+<img src="./assets/images/message-concept.png" alt="メッセージ送信コンセプト" class="rounded-lg shadow-lg w-full">
 </div>
 <div class="md:w-1/2">
 <h3 class="text-3xl font-semibold text-gray-900 mb-6">サンクスメール自動送信</h3>
@@ -289,7 +294,7 @@
 		<div id="tab5" class="tab-content hidden">
 			<div class="flex flex-col md:flex-row items-center gap-12">
 				<div class="md:w-1/2">
-					<img src="assets/images/ui-concept.png" alt="UI操作コンセプト" class="rounded-lg shadow-lg w-full">
+					<img src="./assets/images/ui-concept.png" alt="UI操作コンセプト" class="rounded-lg shadow-lg w-full">
 				</div>
 <div class="md:w-1/2">
 <h3 class="text-3xl font-semibold text-gray-900 mb-6">Tkinter GUIで操作・表示ログ</h3>
@@ -327,7 +332,7 @@
 		<div id="tab6" class="tab-content hidden">
 			<div class="flex flex-col md:flex-row items-center gap-12">
 				<div class="md:w-1/2">
-					<img src="assets/images/automation-concept.png" alt="自動処理設定コンセプト" class="rounded-lg shadow-lg w-full">
+					<img src="./assets/images/automation-concept.png" alt="自動処理設定コンセプト" class="rounded-lg shadow-lg w-full">
 				</div>
 <div class="md:w-1/2">
 <h3 class="text-3xl font-semibold text-gray-900 mb-6">1分ごとに取得→送信</h3>
@@ -624,6 +629,6 @@
 </div>
 </footer>
 <!-- スクリプト -->
-<script src="assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>

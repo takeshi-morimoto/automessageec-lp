@@ -1,14 +1,146 @@
-:where([class^="ri-"])::before { content: "\f3c2"; }
-
+/* ========================================
+   General Styles
+   ======================================== */
 body {
     font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
 }
 
+/* ========================================
+   Gradient Background
+   ======================================== */
 .gradient-bg {
     background: linear-gradient(135deg, #f0f9ff 0%, #e1f5fe 100%);
+}
+
+/* ========================================
+   Feature Card Hover Effect
+   ======================================== */
+.feature-card {
+    transition: all 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   Tab Navigation Styles
+   ======================================== */
+.tab-button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-button:hover {
+    color: #3b82f6;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   Form Styles
+   ======================================== */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* ========================================
+   Button Styles
+   ======================================== */
+button,
+a.button {
+    transition: all 0.3s ease;
+}
+
+/* ========================================
+   Smooth Scroll Offset for Fixed Header
+   ======================================== */
+html {
+    scroll-padding-top: 80px;
+}
+
+/* ========================================
+   Mobile Menu Styles
+   ======================================== */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+/* ========================================
+   RemixIcon Fix
+   ======================================== */
+.ri-check-line,
+.ri-mail-download-line,
+.ri-message-3-line,
+.ri-code-box-line,
+.ri-time-line,
+.ri-medal-line,
+.ri-24-hours-line,
+.ri-install-line,
+.ri-customer-service-2-line,
+.ri-file-list-3-line,
+.ri-tools-line,
+.ri-external-link-line,
+.ri-menu-line,
+.ri-mail-line,
+.ri-phone-line,
+.ri-map-pin-line {
+    font-family: 'remixicon' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+@media (max-width: 768px) {
+    .tab-button {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+@media print {
+    header,
+    footer,
+    #mobile-menu,
+    .no-print {
+        display: none !important;
+    }
 } 
