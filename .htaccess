@@ -68,4 +68,11 @@
 # PHPエラー表示設定（本番環境では非表示）
 php_flag display_errors Off
 php_flag log_errors On
-php_value error_log error.log 
+php_value error_log error.log
+
+# PHPファイルのキャッシュを無効化
+<FilesMatch "\.(php)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</FilesMatch> 
