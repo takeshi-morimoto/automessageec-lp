@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 <!-- RemixIcon -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-WJ8NhFQJmBiF8APfxkDbJ9A11xBHxRfZnB2PxTe7x1A8v6F0H5pP1E/v9qnxNqV3h6f9Z4k6MlGPGXKvFf6ow==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 <!-- Custom CSS -->
 <link rel="stylesheet" href="./assets/css/style.css">
 <!-- Tailwind Config -->
